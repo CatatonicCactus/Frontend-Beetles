@@ -1,0 +1,456 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./beetle-icon-png-28126.png">
+    <script src="https://kit.fontawesome.com/81718b0859.js" crossorigin="anonymous"></script>
+    <title>Frontend Beetles GO!</title>
+</head>
+
+<body>
+    <!--------------navbar is class, navbar-expand makes it responsive, sm md lg u know what it is (less than lg - burger menu)-----------------
+        ms-auto für margin and rechter Seite------------------------------->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><i class="fab fa-pagelines"></i> Bad Cabbage Town</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Breeders</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------Showcase--------------  <div class="d-flex", hooooly moly!---------------------------------------->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Who's that <span class="text-success"><b>Shiny Beetle?</b></span></h1>
+                    <p class="lead my-4">
+                        Scarabs are a mesmerizingly diverse family of beetle found in every
+                        <br>
+                        part of the world
+                        except in the oceans and on Antarctica.
+                    </p>
+                    <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start
+                        here</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="./kai-wenzel-HePcMd1cemE-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------input form or newsletter--------------------------------------------------------->
+    <section class="bg-success text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign up it's free! </h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email" />
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Button</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-----------------------------------------boxes and stuff---------col-md macht dass es sich stapelt im mobilen modus-------------------------------------->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-head-side-cough-slash text-warning"></i>
+                            </div>
+                            <h3 class="card-title mb-3">                             
+                                Where's Wally?
+                            </h3>
+                            <p class="card-text">
+                                Sign Up and receive news and random facts about beetles weekly, for free!
+                            </p>
+                            <a href="#" class="btn btn-secondary">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-drumstick-bite text-warning"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Buzzin'
+                            </h3>
+                            <p class="card-text">
+                                For $5 per month you receive daily updates and photos of our 78 living beetles!
+                            </p>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-kiwi-bird text-warning"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Premium Kiwi
+                            </h3>
+                            <p class="card-text">
+                                Here you get exclusive beetle content + monthly awards - sounds AMAAZING, innit?
+                            </p>
+                            <a href="#" class="btn btn-secondary">Pay More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------Learn Sections 39:04------------------->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center-justify-content-between">
+                <div class="col-md">
+                    <img src="./jon-butterworth-00Bwn0MN2v0-unsplash.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Blind and clumsy</h2>
+                    <p class="lead">
+                        Beetles cannot see very well, so they communicate using pheromones, sounds or vibrations.
+                    </p>
+                    <p>Beetles can both hurt and help the environment. Some beetle species destroy crops or property,
+                        while some species help get rid of garbage, eat dead trees or help pollinate flowers.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="fas fa-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center-justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Cetonia aurata</h2>
+                    <p class="lead">
+                        Adult rose chafers can be a problem on roses and other flowering plants where they feed
+                        on the petals.</p>
+                    <p>The larval grubs are however beneficial to the soil as they help in the
+                        decomposition of plant material and contribute to the natural composting process.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="fas fa-chevron-right"></i> Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="./timothy-dykes-M1lS2LJ6kfY-unsplash.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center-justify-content-between">
+                <div class="col-md">
+                    <img src="./mistkaefer-b6dc8ffd-949d-4fdf-8970-9322d815b91a.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Pretty, but stinky</h2>
+                    <p class="lead">
+                        There are three main types of dung beetle – rollers, tunnellers and dwellers – each named for
+                        the way the way the beetles use the poop they find. Rollers shape dung into balls and roll them
+                        away from the pile. They then burry the ball to either munch on later or to use as a place to
+                        lay their eggs.
+                    </p>
+                    <p>Tunnellers dive into the dung pile, usually working in a ‘male-female’ pair, and
+                        dig a tunnel beneath it. The female beetle then stays in the tunnel sorting out the dung brought
+                        down by the male. Dwellers, on the other hand, simply live inside the pooey pile. Female
+                        dwellers lay their eggs there, and when the larvae (or young) hatch they happily munch away on
+                        the food that surrounds them. Nom nom nom!
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="fas fa-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------------Questions Accordion---------------(select a word, command+D selects all items with the same name, then write watever is new)---------------------->
+    <section id="questions" class="p-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-4 text-warning">Frequently Asked Questions About Beetles</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-------Item 1-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            What are beetles abilities?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Most beetles can fly, although they do so in a slow, clumsy manner.
+                            Water beetles are good swimmers, and many can fly as well. Some beetles that live in deserts
+                            have lost the ability to fly. All beetles have jointed legs, but leg shape and size varies,
+                            depending on the beetle's lifestyle. <code>.ill-keep-that-in-for-my-future-self</code>
+                        </div>
+                    </div>
+                </div>
+                <!-------Item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            Why do dung beetles collect poop?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Although not all dung beetles eat poop exclusively, they all eat
+                            feces at some point in their lives. ... Recent research at the University of Nebraska
+                            suggests dung beetles may be most attracted to omnivore excrement since it provides both
+                            nutritional value and the right amount of odor to make it easy to find.
+                        </div>
+                    </div>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------------->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                            Do beetles fart?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">“The most common gases in insect farts are hydrogen and methane,
+                            which are odorless,” Youngsteadt says. “Some insects may produce gases that would stink, but
+                            there wouldn't be much to smell, given the tiny volumes of gas that we're talking about.”
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------------------------------------item 4------------------------------------------------------------------------>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-four">
+                            Can a dung beetle lift a human?
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Some species of insects can lift objects can a dung beetle carry a
+                            human are 1141
+                            times heavier than their body! Dafuq did I just read
+                        </div>
+                    </div>
+                </div>
+                <!-------Item 5 ---------->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-five">
+                            What dung beetles do?
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Scientists group dung beetles by the way the beetles make a living:
+                            rollers, tunnelers, and
+                            dwellers. Rollers form a bit of dung into a ball, roll it away, and bury it. The balls they
+                            make are either used by the female to lay her eggs in (called a brood ball) or as food for
+                            the adults to eat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------Gallery WHOOOOOOOP fokken finnaly!------------------------------------------------------------------------------->
+    <div class="container-fluid">
+        <h1 class="text-center text-dark">
+           Look At Our Gems
+        </h1>
+        <div class="row">
+            <div class="column">
+                <img src="./Cetonia_aurata_01_05172009.jpg" class="d-block w-100" alt="...">
+                <img src="./alan-emery-emTCWiq2txk-unsplash.jpg" class="d-block w-100" alt="...">
+                <img src="./david-maltais-OkuDWYDh5yE-unsplash.jpg" class="d-block w-100" alt="...">
+                <img src="./kai-wenzel-HePcMd1cemE-unsplash.jpg" alt="">
+                <img src="https://www.animal.photos/insect2/jewel-purp_files/jewel_purple1.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="https://cdn.mos.cms.futurecdn.net/wnVuCZGXpd2Jfa9opeqJME-480-80.jpg" class="d-block w-100" alt="...">
+                <img src="https://drscdn.500px.org/photo/258699957/q%3D80_m%3D1500_of%3D1/v2?sig=df01e1339bb0874b9c5b99c62888b9350bb32b39ceee8b460521194a4677ddcd" class="d-block w-100" alt="...">
+                <img src="https://www.planet-wissen.de/natur/insekten_und_spinnentiere/kaefer/euchromamauritiusgjpg100~_v-gseagaleriexl.jpg" class="d-block w-100" alt="...">
+                <img src="https://live.staticflickr.com/2562/3915630897_26878ca1d0_b.jpg" alt="">
+                <img src="https://rcannon992.files.wordpress.com/2017/08/dung-beetle-trypocopris-geotrupes-pyrenaeus-var-var-coruscans-aug-2017-ii.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="https://i.pinimg.com/originals/bb/32/73/bb32733a8e09b60b69db675099681eb3.jpg" class="d-block w-100" alt="...">
+                <img src="https://live.staticflickr.com/8750/17061207319_4844569674_b.jpg" class="d-block w-100" alt="...">
+                <img src="https://www1.wdr.de/mediathek/video/sendungen/quarks-und-co/insekten-foto-100~_v-ARDFotogalerie.jpg" class="d-block w-100" alt="...">
+                <img src="https://drscdn.500px.org/user_cover/9924261/q%3D65_m%3D2048/v2?webp=true&v=12&sig=3f058578e9b986e130402de3cb04c34fb458f6e2162c5bafb42004a2525c021f" alt="">
+                <img src="./roberto-navarro-QA52kzKqzoU-unsplash.jpg" alt="">
+                <img src="./452332-animals-insect-beetles-macro.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------Breeders---------------------------------------------------------------------------->
+
+    <section id="instructors" class="p-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center text-white">The Beetle-Breeders</h2>
+            <p class="lead text-center text-white mb-5">
+                Meet the skillful humans, behind our army full of beetles and sip a cup of their knowledge everyday,
+                when you become a memeber!
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p>If you think lego hurts, did u ever consider to step on a rhino beetle? Just don't, ok.
+                            </p>
+                            <a href="#"><i class="fas fa-bug text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-bacterium text-dark mx-1"></i></a>
+                            <a href="#"><i class="fab fa-keybase text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-frog text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/21.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h3 class="card-title mb-3">Jane G.I.-Joe</h3>
+                            <p>I once brought two beetles home, but they ran away. I even called myself "crazy
+                                beetlelady", but now I'm just crazy..</p>
+                            <a href="#"><i class="fas fa-bug text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-bacterium text-dark mx-1"></i></a>
+                            <a href="#"><i class="fab fa-keybase text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-frog text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/16.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h3 class="card-title mb-3">Josh Woe</h3>
+                            <p>Not sure why I'm here, one day I walked in to see some bigass beetles and now I getting
+                                money for breeding them? </p>
+                            <a href="#"><i class="fas fa-bug text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-bacterium text-dark mx-1"></i></a>
+                            <a href="#"><i class="fab fa-keybase text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-frog text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/18.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h3 class="card-title mb-3">June Foe</h3>
+                            <p>I bred the biggest OG beetles you have EVER seen. Use Code OG110 for 110% more expensive
+                                deal! </p>
+                            <a href="#"><i class="fas fa-bug text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-bacterium text-dark mx-1"></i></a>
+                            <a href="#"><i class="fab fa-keybase text-dark mx-1"></i></a>
+                            <a href="#"><i class="fas fa-frog text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------footer-------------------------------------->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Bad Cabbage Town aka Elli
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Greetings, friend. Having fun so far? <i
+                            class="far fa-angry"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Join now and you will receive a whole load of useless facts, about all kinds of
+                        beetles, everyday!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">
+                                Last Name:
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                                Email:
+                            </label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">
+                                Phone:
+                            </label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
